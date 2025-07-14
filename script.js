@@ -1,5 +1,4 @@
 const grid = document.getElementById('grid');
-
 // Lista de cursos con sus requisitos
 const courses = {
   // CBC
