@@ -1,1 +1,43 @@
-subieido
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff0f5;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #d63384;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 10px;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.course {
+  background-color: #ffc0cb;
+  border: 2px solid #d63384;
+  border-radius: 8px;
+  padding: 15px;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.3s;
+  opacity: 0.4;
+}
+
+.course:hover {
+  transform: scale(1.05);
+}
+
+.course.unlocked {
+  opacity: 1;
+}
+
+.course.completed {
+  background-color: #d63384;
+  color: white;
+  text-decoration: line-through;
+}
